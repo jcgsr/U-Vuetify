@@ -1,11 +1,16 @@
 <template>
    <div id="math">
-      <h2 class="headline mt-4">Math Vue</h2>
+      <h2 class="display-3 mb-4">Math Vue</h2>
+      <Soma />
    </div>
 </template>
 
-<style lang="css">
-   #math h2 {
-      margin-top: 3rem;
-   }
-</style>
+<script>
+import Soma from './math/Soma'
+export default {
+   name: 'Math',
+   components: { Soma }
+   
+}
+</script>
+
