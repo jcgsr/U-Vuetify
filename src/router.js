@@ -4,6 +4,7 @@ import Router from 'vue-router'
 import Home from './components/Home'
 import MathVue from './components/MathVue'
 import MediaEscolar from './components/MediaEscolar'
+import Conversor from './components/Conversor'
 import Info from './components/Info'
 
 Vue.use(Router)
@@ -27,5 +28,9 @@ export default new Router({
       path: '/media',
       name: 'media',
       component: MediaEscolar
+   }, {
+      path: '/conversor',
+      name: 'conversor',
+      component: Conversor
    }]
 })
