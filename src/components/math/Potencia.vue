@@ -1,10 +1,12 @@
  <template>
-  <v-card class="mx-auto animate__animated animate__backInRight" max-width="544" outlined>
-    <v-card-title>Soma</v-card-title>
+  <v-card class="mx-auto" max-width="544" outlined>
+    <v-card-title>Potenciação</v-card-title>
+    <v-card-text style="color:rgb(129, 129, 6)">Base</v-card-text>
     <v-input>
-      <v-text-field @focus="$event.target.select()" type="number" name="number1" v-model="number1" ></v-text-field>
+      <v-text-field @focus="$event.target.select()" type="number" name="number1" v-model="number1"></v-text-field>
     </v-input>
-      +
+    <v-card-text style="color:rgb(129, 129, 6)">Potência</v-card-text>
+
     <v-input>
       <v-text-field @focus="$event.target.select()" type="number" name="number2" v-model="number2"></v-text-field>
     </v-input>
@@ -23,7 +25,7 @@ export default {
   },
   computed: {
     result() {
-      return parseFloat(this.number1) + parseFloat(this.number2);
+      return Math.pow(this.number1, this.number2);
     },
   },
   methods: {

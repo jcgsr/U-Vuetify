@@ -3,6 +3,7 @@ import Router from 'vue-router'
 
 import Home from './components/Home'
 import MathVue from './components/MathVue'
+import MediaEscolar from './components/MediaEscolar'
 import Info from './components/Info'
 
 Vue.use(Router)
@@ -22,5 +23,9 @@ export default new Router({
       path: '/info',
       name: 'info',
       component: Info
+   }, {
+      path: '/media',
+      name: 'media',
+      component: MediaEscolar
    }]
 })

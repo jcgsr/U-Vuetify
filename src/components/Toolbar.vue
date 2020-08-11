@@ -65,7 +65,7 @@
       </v-toolbar-items>
     </v-app-bar>
     <!-- Drawer -->
-    <v-navigation-drawer v-model="drawer" app right class="text-sm-left">
+    <v-navigation-drawer v-model="drawer" app right class="text-sm-left hidden-lg-and-up">
       <v-btn>
           <router-link class="text-decoration-none" to="/" style="color:rgb(129, 129, 6)">
             <v-icon title="Início">mdi-home</v-icon>
