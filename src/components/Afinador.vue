@@ -57,21 +57,3 @@ export default {
   },
 };
 </script>
-
-<style lang="css">
-#afinador h2 {
-  text-align: center;
-  padding: 1rem;
-  color: rgba(245, 245, 7, 0.479);
-}
-
-.card {
-  width: 50%;
-}
-
-@media only screen and (max-width: 450px) {
-  .card {
-    width: 80%;
-  }
-}
-</style>

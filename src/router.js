@@ -7,6 +7,7 @@ import MediaEscolar from './components/MediaEscolar'
 import Conversor from './components/Conversor'
 import Cambio from './components/Cambio'
 import Afinador from './components/Afinador'
+import IMC from './components/IMC'
 import Info from './components/Info'
 
 Vue.use(Router)
@@ -42,6 +43,10 @@ export default new Router({
       path: '/afinador',
       name: 'afinador',
       component: Afinador
+   }, {
+      path: '/imc',
+      name: 'imc',
+      component: IMC
    }]
    
 })
