@@ -8,6 +8,7 @@ import Conversor from './components/Conversor'
 import Cambio from './components/Cambio'
 import Afinador from './components/Afinador'
 import IMC from './components/IMC'
+import CEP from './components/CEP'
 import Info from './components/Info'
 
 Vue.use(Router)
@@ -47,6 +48,10 @@ export default new Router({
       path: '/imc',
       name: 'imc',
       component: IMC
+   }, {
+      path: '/cep',
+      name: 'cep',
+      component: CEP
    }]
    
 })
