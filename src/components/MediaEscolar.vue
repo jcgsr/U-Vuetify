@@ -1,6 +1,6 @@
 <template>
   <div id="media">
-    <h2 class="display-3 mb-3">Média Escolar</h2>
+    <h2 class="display-3 mb-3">Média Escolar Vue</h2>
     <v-btn
       color="info"
       class="mb-3"

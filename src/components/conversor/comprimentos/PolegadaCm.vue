@@ -39,7 +39,7 @@ export default {
 </script>
 
 <style>
-.
+
 h3 {
   padding: 1rem;
 }

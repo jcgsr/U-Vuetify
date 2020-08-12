@@ -72,7 +72,7 @@ export default {
   flex-direction: row;
   justify-content: space-around;
   text-align: center;
-  max-width: 30%;
+  max-width: 25%;
 }
 
 .button-div button {
