@@ -14,7 +14,7 @@
           v-model="moedaA_value"
         ></v-text-field>
       </v-input>
-      <h2 class="display-3">{{ result | currency }}</h2>
+      <h2 class="display-3 mb-3">{{ result | currency }}</h2>
     </v-card>
   </div>
 </template>

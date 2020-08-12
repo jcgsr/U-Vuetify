@@ -79,4 +79,15 @@ export default {
 	margin-left: .5rem;
 	color: rgba(245, 245, 7, 0.479);
 }
+
+@media screen and (max-width: 456px) {
+  .button-div {
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;    
+  }
+  .button-div button {
+    margin-bottom: .5rem;
+  }
+}
 </style>

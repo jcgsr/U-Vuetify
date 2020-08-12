@@ -6,6 +6,7 @@ import MathVue from './components/MathVue'
 import MediaEscolar from './components/MediaEscolar'
 import Conversor from './components/Conversor'
 import Cambio from './components/Cambio'
+import Afinador from './components/Afinador'
 import Info from './components/Info'
 
 Vue.use(Router)
@@ -37,5 +38,10 @@ export default new Router({
       path: '/cambio',
       name: 'cambio',
       component: Cambio
+   }, {
+      path: '/afinador',
+      name: 'afinador',
+      component: Afinador
    }]
+   
 })

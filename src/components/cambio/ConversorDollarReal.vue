@@ -5,7 +5,6 @@
     </v-alert>
     <v-card class="mx-auto animate__animated animate__backInRight" max-width="544" outlined>
       <v-card-title>{{ moedaA }} para {{ moedaB }}</v-card-title>
-
       <v-input>
         <v-text-field
           @focus="$event.target.select()"
@@ -14,7 +13,7 @@
           v-model="moedaA_value"
         ></v-text-field>
       </v-input>
-      <h2 class="display-3">{{ result | currency }}</h2>
+      <h2 class="display-3 mb-3">{{ result | currency }}</h2>
     </v-card>
   </div>
 </template>

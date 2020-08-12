@@ -1,7 +1,7 @@
 <template>
   <v-card>
     <v-app-bar app fixed dense>      
-      <v-toolbar-title class="headline text-uppercase mr-4">
+      <v-toolbar-title class="headline text-uppercase">
         <span>U</span>
         <span class="font-weight-light">-Vue</span>
       </v-toolbar-title>      

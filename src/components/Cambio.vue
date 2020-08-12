@@ -29,27 +29,3 @@ export default {
 };
 </script>
 
-<style lang="css">
-#cambio h2 {
-  padding: 1rem;
-  color: rgba(245, 245, 7, 0.479);
-}
-
-.conversor {
-  /* display: flex; */
-  color: rgba(245, 245, 7, 0.479);
-  width: 100%;
-  margin: 0 auto;
-  margin-left: .3rem;
-}
-
-@media only screen and (max-width: 600px) {
-  .conversor {
- display: grid;
- margin: 0 auto;
-  }
-    .card {
-      margin-bottom: 1rem;
-    }
-  }
-</style>
