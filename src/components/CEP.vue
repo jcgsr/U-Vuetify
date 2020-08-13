@@ -8,7 +8,7 @@
       </p>
     </v-alert>
 
-    <v-card class="mx-auto animate__animated animate__backInRight" max-width="544" outlined>
+    <v-card class="mx-auto animate__animated animate__backInUp" max-width="544" outlined>
       <v-card-title>Digite o CEP para ver o endereço</v-card-title>
       <v-input>
         <v-text-field @focus="$event.target.select()" type="number" v-model="cepInfo"></v-text-field>
