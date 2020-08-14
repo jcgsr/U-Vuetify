@@ -138,7 +138,7 @@ hr {
     max-width: 85%;
   }
   .contatos .v-icon.v-icon {
-    font-size: 1.7rem;
+    font-size: 1rem;
     margin: 0 1rem;
   }
 }
