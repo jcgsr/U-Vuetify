@@ -52,7 +52,7 @@
       </p>
       <hr />
       <!-- CONTATOS -->
-      <h4 class="display-2 mt-12 mb-6">Contatos</h4>
+      <h4 class="display-1 mt-12 mb-6">Contatos</h4>
       <section class="contatos">
         <a :href="joGithub" target="new" title="Github de Jovane">
           <v-icon style="color:rgb(129, 129, 6)" title="Github de Jovane">mdi-github</v-icon>
@@ -138,7 +138,7 @@ hr {
     max-width: 85%;
   }
   .contatos .v-icon.v-icon {
-    font-size: 1rem;
+    font-size: 1.3rem;
     margin: 0 1rem;
   }
 }
