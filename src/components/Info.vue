@@ -27,16 +27,15 @@
         <a
           :href="netlifyUrl"
           target="new"
-        >Netlify</a> em um único site: meu primeiro com domínio e hospedagem pagos.
+        >Netlify</a> em um único site: meu primeiro com domínio pago.
       </p>
       <p>
         O que utilizei para a criação desse projeto foi Vue.js, obviamente,
         <a
           :href="vuetifyUrl"
           target="new"
-        >Vuetify</a>, animações do
-        <a :href="animateUrl" target="new">Animate</a> e uma imagem do
-        <a :href="pexelUrl" target="new">Pexel</a>.
+        >Vuetify</a> e animações do
+        <a :href="animateUrl" target="new">Animate</a>.
       </p>
       <p>Meu objetivo é que esse site cresça à medida que eu aprenda novas funcionalidades, crie novos projetos e que, de fato, possa ter alguma utilidade para quem quer que seja.</p>
     </div>
@@ -85,9 +84,7 @@ export default {
     cod3rUrl: "https://www.udemy.com/course/vue-js-completo/",
     netlifyUrl: "https://www.netlify.com/",
     vuetifyUrl: "https://vuetifyjs.com/en/",
-    animateUrl: "https://animate.style/",
-    pexelUrl:
-      "https://www.pexels.com/pt-br/foto/atendente-atividade-banco-de-dados-base-de-dados-546819/",
+    animateUrl: "https://animate.style/",   
     luizURL:
       "https://www.udemy.com/course/curso-de-javascript-moderno-do-basico-ao-avancado/",
     joGithub: "https://github.com/jcgsr",
