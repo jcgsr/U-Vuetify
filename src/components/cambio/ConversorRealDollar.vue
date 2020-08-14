@@ -3,7 +3,7 @@
     <v-alert type="danger" id="danger" v-if="errored" dismissible class="mt-2">
       <p>Erro! O servidor não está respondendo. 🙁</p>
     </v-alert>
-    <v-card class="mx-auto animate__animated animate__backInLeft" max-width="544" outlined>
+    <v-card class="mx-auto animate__animated animate__backInLeft" width="544" outlined>
       <v-card-title>{{ moedaA }} para {{ moedaB }}</v-card-title>
 
       <v-input>

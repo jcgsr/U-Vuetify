@@ -1,5 +1,5 @@
  <template>
-  <v-card class="mx-auto mb-3 animate__animated animate__bounceInRight" max-width="544" outlined>
+  <v-card class="direta mx-auto mb-3 animate__animated animate__bounceInRight" width="544" outlined>
     <v-card-title>Aprovação Direta</v-card-title>1ª Nota
     <v-input>
       <v-text-field @focus="$event.target.select()" type="number" name="nota1" v-model="nota1"></v-text-field>
@@ -47,4 +47,6 @@ export default {
   },
 };
 </script>
+
+
 

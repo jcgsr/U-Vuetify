@@ -1,7 +1,7 @@
 <template>
   <div id="imc">
-    <h2 class="display-3 mb-3">IMC</h2>
-    <v-card class="mx-auto animate__animated animate__fadeInDown mb-3" max-width="544" outlined>
+    <h2 class="display-3 mt-3 mb-3">IMC</h2>
+    <v-card class="mx-auto animate__animated animate__fadeInDown mb-3" width="544" outlined>
       Peso
       <v-input>
         <v-text-field @focus="$event.target.select()" type="number" name="peso" v-model="peso"></v-text-field>
@@ -80,7 +80,7 @@ export default {
 
 <style scoped>
 .tabela {
-  width: 35%;
+  width: 70%;
   margin: 0 auto;
 }
 
@@ -92,9 +92,20 @@ th {
   font-size: 1.5rem;
 }
 
-@media only screen and (max-width: 458px) {
+@media only screen and (max-width: 456px) {
   .tabela {
-    width: 80%;
+    width: 75%;
+    margin: 0 auto;
+  }
+  .tabela td,
+  tr,
+  th {
+    font-weight: bold;
+    padding: 1rem;
+    font-size: 1rem;
+  }
+  #imc {
+    width: 85%;
   }
 }
 </style>

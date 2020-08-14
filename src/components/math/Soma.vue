@@ -1,10 +1,9 @@
  <template>
-  <v-card class="mx-auto animate__animated animate__backInRight" max-width="544" outlined>
+  <v-card class="mx-auto animate__animated animate__backInRight" width="544" outlined>
     <v-card-title>Soma</v-card-title>
     <v-input>
-      <v-text-field @focus="$event.target.select()" type="number" name="number1" v-model="number1" ></v-text-field>
-    </v-input>
-      +
+      <v-text-field @focus="$event.target.select()" type="number" name="number1" v-model="number1"></v-text-field>
+    </v-input>+
     <v-input>
       <v-text-field @focus="$event.target.select()" type="number" name="number2" v-model="number2"></v-text-field>
     </v-input>

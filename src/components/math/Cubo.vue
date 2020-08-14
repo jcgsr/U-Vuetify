@@ -1,5 +1,5 @@
  <template>
-  <v-card class="mx-auto" max-width="544" outlined>
+  <v-card class="mx-auto" width="544" outlined>
     <v-card-title>Cubo</v-card-title>
     <v-input>
       <v-text-field @focus="$event.target.select()" type="number" name="number" v-model="number" ></v-text-field>

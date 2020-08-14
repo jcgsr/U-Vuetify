@@ -1,6 +1,6 @@
 <template>
   <div id="sobre">
-    <h2 class="display-3 mb-3">{{ title }}</h2>
+    <h2 class="display-3 mt-3 mb-3">{{ title }}</h2>
     <h4 class="display-1">
       Série de webapps utilitários feitos usando
       <a
@@ -10,8 +10,8 @@
       >Vue.JS</a>
     </h4>
     <v-parallax height="300" src="../assets/logo.png" title="Vue.JS logo no Wikipedia"></v-parallax>
-
-    <div class="p-div mx-auto">
+    <!-- SOBRE O SITE -->
+    <div class="p-div mx-auto mt-12">
       <p>
         Sobre esse
         <strong>site</strong>: foi idealizado por
@@ -40,8 +40,8 @@
       </p>
       <p>Meu objetivo é que esse site cresça à medida que eu aprenda novas funcionalidades, crie novos projetos e que, de fato, possa ter alguma utilidade para quem quer que seja.</p>
     </div>
-    <v-parallax height="500" src="../assets/logo.svg" title="Vue.JS logo no Wikipedia"></v-parallax>
-
+    <v-parallax height="300" src="../assets/logo.svg" title="Vue.JS logo no Wikipedia"></v-parallax>
+    <!-- SOBRE O AUTOR -->
     <div class="p-div_sobre mx-auto mt-4">
       <p>
         Sobre o
@@ -50,7 +50,9 @@
           :href="luizURL"
         >Luiz Otávio</a>.
       </p>
-      <h4 class="display-2 mt-6">Contatos</h4>
+      <hr />
+      <!-- CONTATOS -->
+      <h4 class="display-2 mt-12 mb-6">Contatos</h4>
       <section class="contatos">
         <a :href="joGithub" target="new" title="Github de Jovane">
           <v-icon style="color:rgb(129, 129, 6)" title="Github de Jovane">mdi-github</v-icon>
@@ -100,32 +102,30 @@ export default {
 </script>
 
 <style lang="css">
-#sobre h2,
-h4 {
-  text-align: center;
-  padding: 1rem;
-  color: rgba(245, 245, 7, 0.479);
+hr {
+  height: 1px;
+  background-color: rgba(245, 245, 7, 0.479);
+  border: none;
 }
-
 #sobre h4 {
   color: rgba(245, 245, 7, 0.479);
 }
 
 .contatos .v-icon.v-icon {
   font-size: 3.5rem;
-  margin: 0 1rem; 
+  margin: 0 1rem;
   opacity: 0.6;
   transition: 0.8s;
   margin-top: 1rem;
 }
 
-.contatos .v-icon.v-icon:hover{
+.contatos .v-icon.v-icon:hover {
   opacity: 1;
 }
 
-.v-application a{
-    text-decoration: none;
-  }
+.v-application a {
+  text-decoration: none;
+}
 
 @media only screen and (max-width: 425px) {
   .p-div {
@@ -139,9 +139,8 @@ h4 {
   }
   .contatos .v-icon.v-icon {
     font-size: 1.7rem;
-    margin: 0 1rem;           
+    margin: 0 1rem;
   }
-  
 }
 
 @media only screen and (min-width: 768px) {
@@ -154,6 +153,6 @@ h4 {
     height: 30rem;
     font-size: 1.3rem;
     max-width: 75%;
-  }  
+  }
 }
 </style>

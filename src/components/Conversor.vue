@@ -1,6 +1,6 @@
 <template>
   <div id="conversor">
-    <h2 class="display-3 mb-3">{{ title }}</h2>
+    <h2 class="display-3 mt-3 mb-3">{{ title }}</h2>
     <div class="button-div">
       <v-btn secondary style="color:rgb(129, 129, 6)"
         @click="temperatura"        
@@ -60,11 +60,11 @@ export default {
 </script>
 
 <style>
-	#conversor h2 {
+	/* #conversor h2 {
 		text-align: center;
 		padding: 1rem;
 		color: rgba(245, 245, 7, 0.479);
-	}
+	} */
 
 .button-div {
   margin: 0 auto;
@@ -88,6 +88,9 @@ export default {
   }
   .button-div button {
     margin-bottom: .5rem;
+  }
+  #conversor {
+    max-width: 85%;
   }
 }
 </style>

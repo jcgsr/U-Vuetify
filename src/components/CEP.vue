@@ -1,6 +1,6 @@
 <template>
   <div id="cep">
-    <h2 class="display-3 mb-3">{{ title }}</h2>
+    <h2 class="display-3 mt-3 mb-3">{{ title }}</h2>
     <v-alert type="danger" id="danger" v-if="errored" dismissible class="mt-2">
       <p>
         Erro! O servidor não está respondendo. 🙁
@@ -8,7 +8,7 @@
       </p>
     </v-alert>
 
-    <v-card class="mx-auto animate__animated animate__backInUp" max-width="544" outlined>
+    <v-card class="mx-auto animate__animated animate__backInUp" width="544" outlined>
       <v-card-title>Digite o CEP para ver o endereço</v-card-title>
       <v-input>
         <v-text-field @focus="$event.target.select()" type="number" v-model="cepInfo"></v-text-field>
@@ -52,15 +52,6 @@ export default {
 </script>
 
 <style>
-#cep h2 {
-  text-align: center;
-  padding: 1rem;
-  color: rgba(245, 245, 7, 0.479);
-}
-
-#cep .card {
-  width: 50%;
-}
 
 #cep button {
   margin: 1rem 0;
@@ -78,8 +69,8 @@ export default {
   display: block;
 }
 
-@media only screen and (max-width: 600px) {
-  #cep .card {
+@media only screen and (max-width: 456px) {
+  #cep {
     width: 80%;
   }
 

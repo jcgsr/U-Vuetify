@@ -1,6 +1,6 @@
 <template>
   <div id="cambio">
-    <h2 class="display-3 mb-3">{{ title }}</h2>
+    <h2 class="display-3 mt-3 mb-3">{{ title }}</h2>
     <div class="conversor">
       <ConversorDollarReal moeda-a="USD" moeda-b="BRL" />
       <ConversorEuroReal moeda-a="EUR" moeda-b="BRL" />
@@ -28,4 +28,12 @@ export default {
   }),
 };
 </script>
+
+<style lang="css">
+@media only screen and (max-width: 456px) {
+  #cambio {
+    width: 85%;
+  }
+}
+</style>
 

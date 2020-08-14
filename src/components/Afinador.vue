@@ -1,7 +1,7 @@
 <template>
   <div id="afinador">
-    <h2 class="display-3 mb-3">Afinador</h2>
-    <v-card class="mx-auto animate__animated animate__backInRight" max-width="544" outlined>
+    <h2 class="display-3 mt-3 mb-3">Afinador</h2>
+    <v-card class="mx-auto animate__animated animate__backInRight" width="544" outlined>
       <h2 style="color: blueviolet;">Mi (E)</h2>
       <audio controls>
         <source src="./tons/Mi82.mp3" type="audio/mp3" />
@@ -57,3 +57,14 @@ export default {
   },
 };
 </script>
+
+<style lang="css">
+@media only screen and (max-width: 456px) {
+  #afinador {
+    width: 85%;
+  }
+  audio {    
+    width: 80%;
+  }
+}
+</style>

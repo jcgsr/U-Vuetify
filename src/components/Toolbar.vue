@@ -22,13 +22,13 @@
         </v-btn>
         <v-btn>
           <router-link class="text-decoration-none" to="/media" style="color:rgb(129, 129, 6)">
-            <v-icon title="Operações Matemáticas">mdi-school</v-icon>
+            <v-icon title="Média Escolar">mdi-school</v-icon>
             <h6>Média Escolar</h6>
           </router-link>
         </v-btn>
         <v-btn>
           <router-link class="text-decoration-none" to="/conversor" style="color:rgb(129, 129, 6)">
-            <v-icon title="Operações Matemáticas">mdi-temperature-celsius</v-icon>
+            <v-icon title="Conversor">mdi-temperature-celsius</v-icon>
             <h6>Conversor</h6>
           </router-link>
         </v-btn>
@@ -52,7 +52,7 @@
         </v-btn>
         <v-btn>
           <router-link class="text-decoration-none" to="/cep" style="color:rgb(129, 129, 6)">
-            <v-icon title="Câmbio">mdi-email</v-icon>
+            <v-icon title="Endereço">mdi-email</v-icon>
             <h6>Endereço</h6>
           </router-link>
         </v-btn>
@@ -141,6 +141,7 @@ export default {
 
   .v-navigation-drawer__content button {
     margin-bottom: .3rem;
+    width: 100%;
   }
 </style>
 
