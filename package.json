@@ -11,6 +11,7 @@
     "animate.css": "^4.1.0",
     "axios": "^0.19.2",
     "core-js": "^3.6.5",
+    "prerender": "^5.8.0",
     "vue": "^2.6.11",
     "vue-router": "^3.4.2",
     "vue-scrollto": "^2.18.2",
