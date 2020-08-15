@@ -87,6 +87,7 @@ export default {
     width: 70%;
     height: 90%;
     margin: 1rem auto;
+    opacity: 1;
   }
 }
 @media only screen and (min-width: 451px) {
@@ -95,6 +96,8 @@ export default {
     height: 90%;
     margin: 1rem auto;
     margin-left: 0.5rem;
+    opacity: 1;
+
   }
 }
 </style>
