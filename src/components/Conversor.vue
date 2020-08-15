@@ -2,15 +2,15 @@
   <div id="conversor">
     <h2 class="display-3 mt-3 mb-3">{{ title }}</h2>
     <div class="button-div">
-      <v-btn secondary style="color:rgb(129, 129, 6)"
+      <v-btn secondary style="color:rgb(235, 235, 21)"
         @click="temperatura"        
         class="animate__animated animate__backInLeft"
       >Temperatura</v-btn>
-      <v-btn secondary style="color:rgb(129, 129, 6)"
+      <v-btn secondary style="color:rgb(235, 235, 21)"
         @click="comprimento"        
         class="animate__animated animate__fadeInDown"
       >Comprimento</v-btn>
-      <v-btn secondary style="color:rgb(129, 129, 6)"
+      <v-btn secondary style="color:rgb(235, 235, 21)"
         @click="massa"       
         class="animate__animated animate__backInRight"
       >Massa</v-btn>

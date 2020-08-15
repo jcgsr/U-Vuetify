@@ -35,6 +35,6 @@ export default {
 }
 
 .v-application .white--text {
-  color: rgb(129, 129, 6) !important;
+  color: rgb(235, 235, 21) !important;
 }
 </style>

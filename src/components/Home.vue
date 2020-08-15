@@ -5,43 +5,43 @@
     <div class="container">
       <div class="field">
         <router-link to="/math" class="nav-link">
-          <v-icon title="Operações Matemáticas" style="color:rgb(129, 129, 6)">mdi-calculator</v-icon>
+          <v-icon title="Operações Matemáticas" style="color:rgb(235, 235, 21)">mdi-calculator</v-icon>
         </router-link>
       </div>
 
       <div class="field">
         <router-link to="/media" class="nav-link">
-          <v-icon title="Média Escolar" style="color:rgb(129, 129, 6)">mdi-school</v-icon>
+          <v-icon title="Média Escolar" style="color:rgb(235, 235, 21)">mdi-school</v-icon>
         </router-link>
       </div>
 
       <div class="field">
         <router-link to="/conversor" class="nav-link">
-          <v-icon title="Conversor" style="color:rgb(129, 129, 6)">mdi-temperature-celsius</v-icon>
+          <v-icon title="Conversor" style="color:rgb(235, 235, 21)">mdi-temperature-celsius</v-icon>
         </router-link>
       </div>
 
       <div class="field">
         <router-link to="/cambio" class="nav-link">
-          <v-icon title="Câmbio" style="color:rgb(129, 129, 6)">mdi-cash-usd</v-icon>
+          <v-icon title="Câmbio" style="color:rgb(235, 235, 21)">mdi-cash-usd</v-icon>
         </router-link>
       </div>
 
       <div class="field">
         <router-link to="/afinador" class="nav-link">
-          <v-icon title="Afinador" style="color:rgb(129, 129, 6)">mdi-guitar-acoustic</v-icon>
+          <v-icon title="Afinador" style="color:rgb(235, 235, 21)">mdi-guitar-acoustic</v-icon>
         </router-link>
       </div>
 
       <div class="field">
         <router-link to="/imc" class="nav-link">
-          <v-icon title="IMC" style="color:rgb(129, 129, 6)">mdi-weight-kilogram</v-icon>
+          <v-icon title="IMC" style="color:rgb(235, 235, 21)">mdi-weight-kilogram</v-icon>
         </router-link>
       </div>
 
       <div class="field">
         <router-link to="/cep" class="nav-link">
-          <v-icon title="Endereço" style="color:rgb(129, 129, 6)">mdi-email</v-icon>
+          <v-icon title="Endereço" style="color:rgb(235, 235, 21)">mdi-email</v-icon>
         </router-link>
       </div>
     </div>

@@ -37,7 +37,7 @@ export default {
 *,
 html,
 body {
-  color: rgb(129, 129, 6);
+  color: rgb(235, 235, 21);
   text-align: center;
   margin: 0 auto;
 }

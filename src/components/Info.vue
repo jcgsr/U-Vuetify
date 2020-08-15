@@ -1,7 +1,7 @@
 <template>
   <div id="sobre">
     <h2 class="display-3 mt-3 mb-3">{{ title }}</h2>
-    <h4 class="display-1">
+    <h4 class="display-1" style="color:rgb(235, 235, 21)">
       Série de webapps utilitários feitos usando
       <a
         :href="vueUrl"
@@ -51,22 +51,22 @@
       </p>
       <hr />
       <!-- CONTATOS -->
-      <h4 class="display-1 mt-12 mb-6">Contatos</h4>
+      <h4 class="display-1 mt-12 mb-6" style="color:rgb(235, 235, 21)">Contatos</h4>
       <section class="contatos">
         <a :href="joGithub" target="new" title="Github de Jovane">
-          <v-icon style="color:rgb(129, 129, 6)" title="Github de Jovane">mdi-github</v-icon>
+          <v-icon style="color:rgb(235, 235, 21)" title="Github de Jovane">mdi-github</v-icon>
         </a>
         <a :href="joLinkedin" target="new" title="Linkedin de Jovane">
-          <v-icon style="color:rgb(129, 129, 6)" title="Linkedin de Jovane">mdi-linkedin</v-icon>
+          <v-icon style="color:rgb(235, 235, 21)" title="Linkedin de Jovane">mdi-linkedin</v-icon>
         </a>
         <a :href="joTwitter" target="new" title="Twitter de Jovane">
-          <v-icon style="color:rgb(129, 129, 6)" title="Twitter de Jovane">mdi-twitter</v-icon>
+          <v-icon style="color:rgb(235, 235, 21)" title="Twitter de Jovane">mdi-twitter</v-icon>
         </a>
         <a :href="joWhatsapp" target="new" title="Whatsapp de Jovane">
-          <v-icon style="color:rgb(129, 129, 6)" title="Whatsapp de Jovane">mdi-whatsapp</v-icon>
+          <v-icon style="color:rgb(235, 235, 21)" title="Whatsapp de Jovane">mdi-whatsapp</v-icon>
         </a>
         <a :href="joFB" target="new" title="Facebook de Jovane">
-          <v-icon style="color:rgb(129, 129, 6)" title="Facebook de Jovane">mdi-facebook</v-icon>
+          <v-icon style="color:rgb(235, 235, 21)" title="Facebook de Jovane">mdi-facebook</v-icon>
         </a>
       </section>
     </div>
@@ -101,11 +101,11 @@ export default {
 <style lang="css">
 hr {
   height: 1px;
-  background-color: rgba(245, 245, 7, 0.479);
+  background-color: rgba(235, 235, 21, 0.479);
   border: none;
 }
 #sobre h4 {
-  color: rgba(245, 245, 7, 0.479);
+  color: rgba(235, 235, 21, 0.479);
 }
 
 .contatos .v-icon.v-icon {

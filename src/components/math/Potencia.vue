@@ -1,11 +1,11 @@
  <template>
   <v-card class="mx-auto" max-width="544" outlined>
     <v-card-title>Potenciação</v-card-title>
-    <v-card-text style="color:rgb(129, 129, 6)">Base</v-card-text>
+    <v-card-text style="color:rgb(235, 235, 21)">Base</v-card-text>
     <v-input>
       <v-text-field @focus="$event.target.select()" type="number" name="number1" v-model="number1"></v-text-field>
     </v-input>
-    <v-card-text style="color:rgb(129, 129, 6)">Potência</v-card-text>
+    <v-card-text style="color:rgb(235, 235, 21)">Potência</v-card-text>
 
     <v-input>
       <v-text-field @focus="$event.target.select()" type="number" name="number2" v-model="number2"></v-text-field>
