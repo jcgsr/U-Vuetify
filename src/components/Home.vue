@@ -100,8 +100,7 @@ export default {
     width: 70%;
     height: 90%;
     margin: 1rem auto;
-    margin-left: 0.5rem;
-    opacity: 1;
+    margin-left: 0.5rem; 
 
   }
 }
