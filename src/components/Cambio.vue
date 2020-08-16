@@ -24,7 +24,7 @@ export default {
   components: { ConversorDollarReal, ConversorEuroReal, ConversorRealDollar, ConversorRealEuro, ConversorRealLibra, ConversorLibraReal },
   name: "Cambio",
   data: () => ({
-    title: "Taxa de Câmbio Vue",
+    title: "Taxa de Câmbio",
   }),
 };
 </script>

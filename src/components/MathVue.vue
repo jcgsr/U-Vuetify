@@ -1,6 +1,6 @@
 <template>
   <div id="math">
-    <h2 class="display-3 mt-3 mb-4">Math Vue</h2>
+    <h2 class="display-3 mt-3 mb-4">Operações Matemáticas</h2>
     <Soma class="mb-1" />
     <Subtracao class="mb-1" />
     <Multiplicacao class="mb-1" />

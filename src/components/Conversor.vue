@@ -29,7 +29,7 @@ import Comprimento from "./conversor/comprimentos/Comprimento";
 export default {
   data() {
     return {
-      title: "Conversor Vue",
+      title: "Conversor",
       showTemperatura: true,
       showComprimento: false,
       showMassa: false     
