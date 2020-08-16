@@ -5,6 +5,11 @@
     <div class="container">
       <div class="field">
         <router-link to="/math" class="nav-link">
+          <v-icon title="Operações Matemáticas" style="color:rgb(235, 235, 21)">mdi-numeric</v-icon>
+        </router-link>
+      </div>
+      <div class="field">
+        <router-link to="/calculadora" class="nav-link">
           <v-icon title="Operações Matemáticas" style="color:rgb(235, 235, 21)">mdi-calculator</v-icon>
         </router-link>
       </div>

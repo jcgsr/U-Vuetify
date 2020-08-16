@@ -3,6 +3,7 @@ import Router from 'vue-router'
 
 import Home from './components/Home'
 import MathVue from './components/MathVue'
+import Calculadora from './components/Calculadora'
 import MediaEscolar from './components/MediaEscolar'
 import Conversor from './components/Conversor'
 import Cambio from './components/Cambio'
@@ -52,6 +53,10 @@ export default new Router({
       path: '/cep',
       name: 'cep',
       component: CEP
+   }, {
+      path: '/calculadora',
+      name: 'calculadora',
+      component: Calculadora
    }]
    
 })
