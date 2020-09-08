@@ -35,10 +35,10 @@ export default {
 
   computed: {
     result() {
-      return (this.number / 3.281).toFixed(2) + 'ft' 
+      return (this.number / 3.281).toFixed(2) + 'm' 
     },
     result1() {
-      return (this.number1 * 3.281).toFixed(2) + 'm'
+      return (this.number1 * 3.281).toFixed(2) + 'ft'
     }
   },
   components: {
