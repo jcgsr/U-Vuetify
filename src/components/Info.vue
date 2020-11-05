@@ -140,6 +140,11 @@ hr {
   }
 }
 
+.contatos {
+  display: flex;
+  justify-content: center;
+}
+
 @media only screen and (min-width: 768px) {
   .p-div {
     height: 40rem;

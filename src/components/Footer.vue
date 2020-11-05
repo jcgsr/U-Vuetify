@@ -39,6 +39,6 @@ export default {
 }
 
 .theme--dark.v-btn:not(.v-btn--flat):not(.v-btn--text):not(.v-btn--outlined) {
-  width: 80px;
+  width: 100px;
 }
 </style>
