@@ -11,6 +11,7 @@ import Afinador from './components/Afinador'
 import IMC from './components/IMC'
 import CEP from './components/CEP'
 import Info from './components/Info'
+import ConvertCase from './components/ConvertCase'
 
 Vue.use(Router)
 
@@ -57,6 +58,10 @@ export default new Router({
       path: '/calculadora',
       name: 'calculadora',
       component: Calculadora
+   }, {
+      path: '/convertcase',
+      name: 'convertcase',
+      component: ConvertCase
    }]
    
 })

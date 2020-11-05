@@ -100,6 +100,12 @@
         </router-link>
       </v-btn>
       <v-btn>
+        <router-link class="text-decoration-none" to="/convertcase" style="color:rgb(235, 235, 21)">
+          <v-icon title="Convert Case">mdi-format-letter-case-lower</v-icon>
+          <h6>Convert Case</h6>
+        </router-link>
+      </v-btn>
+      <v-btn>
         <router-link class="text-decoration-none" to="/conversor" style="color:rgb(235, 235, 21)">
           <v-icon title="Conversor">mdi-temperature-celsius</v-icon>
           <h6>Conversor</h6>
