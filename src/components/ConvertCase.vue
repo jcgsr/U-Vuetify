@@ -18,16 +18,42 @@
       <h2 class="display-3">{{ result2 }}</h2>
     </v-card>
 
-    <!-- <v-card class="mx-auto mb-3 animate__animated animate__backInRight" width="544" outlined>
-      <v-card-title>Primeira Letra Da Palavra Maiúscula</v-card-title>
+    <v-card class="mx-auto mb-3 animate__animated animate__backInRight" width="544" outlined>
+      <v-card-title>Primeira Letra De Cada Palavra Maiúscula</v-card-title>
       <v-input>
         <v-textarea @focus="$event.target.select()" type="text" name="text3" v-model="text3"></v-textarea>
       </v-input>    
       <v-btn class="animate__animated animate__tada mb-4" @click="zerar">limpar</v-btn>
       <h2 class="display-3">{{ result3 }}</h2>
-    </v-card> -->
-  </div>
+    </v-card>
 
+    <v-card class="mx-auto mb-3 animate__animated animate__backInRight" width="544" outlined>
+      <v-card-title>aditrevnI arvalaP</v-card-title>
+      <v-input>
+        <v-textarea @focus="$event.target.select()" type="text" name="text4" v-model="text4"></v-textarea>
+      </v-input>    
+      <v-btn class="animate__animated animate__tada mb-4" @click="zerar">limpar</v-btn>
+      <h2 class="display-3">{{ result4 }}</h2>
+    </v-card>
+
+    <v-card class="mx-auto mb-3 animate__animated animate__backInRight" width="544" outlined>
+      <v-card-title>AlTeRnAdO</v-card-title>
+      <v-input>
+        <v-textarea @focus="$event.target.select()" type="text" name="text5" v-model="text5"></v-textarea>
+      </v-input>    
+      <v-btn class="animate__animated animate__tada mb-4" @click="zerar">limpar</v-btn>
+      <h2 class="display-3">{{ result5 }}</h2>
+    </v-card>
+
+    <v-card class="mx-auto mb-3 animate__animated animate__backInRight" width="544" outlined>
+      <v-card-title>Primeira palavra da frase</v-card-title>
+      <v-input>
+        <v-textarea @focus="$event.target.select()" type="text" name="text6" v-model="text6"></v-textarea>
+      </v-input>    
+      <v-btn class="animate__animated animate__tada mb-4" @click="zerar">limpar</v-btn>
+      <h2 class="display-3">{{ result6 }}</h2>
+    </v-card>
+  </div>
 
 </template>
 
@@ -37,6 +63,10 @@ export default {
     return {
       text1: "",      
       text2: "",      
+      text3: "",      
+      text4: "",      
+      text5: "",      
+      text6: "",      
     };
   },
   computed: {
@@ -46,16 +76,33 @@ export default {
     result2() {
       return this.text2.toLowerCase()
     },
-    // result3() {
-    //   this.text3.charAt(0).toUpperCase() + this.text3.slice(1)
-    //   return this.text3.split(' ').map(this.text3).join(' ')
-    // }
+    result3() {
+      return this.text3.toLowerCase().replace(/^(.)|\s+(.)/g, chr => chr.toUpperCase())
+    },
+    result4() {
+      return this.text4.split("").reverse().join("")
+    },
+    result5() {
+      let text = this.text5.toLowerCase()
+      text = text.split('')
+      for (let i = 0; i < text.length; i+=2) {
+        text[i] = text[i].toUpperCase()
+      }
+      text = text.join('')
+      return text
+    },
+    result6() {
+      return this.text6.toLowerCase().replace(/^./g, chr => chr.toUpperCase())
+    }
   },
   methods: {
     zerar: function () {
       this.text1 = "";      
       this.text2 = "";      
       this.text3 = "";      
+      this.text4 = "";      
+      this.text5 = "";      
+      this.text6 = "";      
     },
   },
 };

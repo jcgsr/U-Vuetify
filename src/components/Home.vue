@@ -21,6 +21,12 @@
       </div>
 
       <div class="field">
+        <router-link to="/convertcase" class="nav-link">
+          <v-icon title="Conversor de Texto" style="color:rgb(235, 235, 21)">mdi-format-letter-case-lower</v-icon>
+        </router-link>
+      </div>
+
+      <div class="field">
         <router-link to="/conversor" class="nav-link">
           <v-icon title="Conversor" style="color:rgb(235, 235, 21)">mdi-temperature-celsius</v-icon>
         </router-link>

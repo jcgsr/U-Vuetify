@@ -101,8 +101,8 @@
       </v-btn>
       <v-btn>
         <router-link class="text-decoration-none" to="/convertcase" style="color:rgb(235, 235, 21)">
-          <v-icon title="Convert Case">mdi-format-letter-case-lower</v-icon>
-          <h6>Convert Case</h6>
+          <v-icon title="Conversor de Texto">mdi-format-letter-case-lower</v-icon>
+          <h6>Conversor de Texto</h6>
         </router-link>
       </v-btn>
       <v-btn>
