@@ -1,6 +1,6 @@
 <template>
   <div id="math">
-    <h2 class="display-3 mt-3 mb-4">Operações Matemáticas</h2>
+    <h2 class="display-3 mt-3 mb-4">Matemática Básica</h2>
     <Soma class="mb-1" />
     <Subtracao class="mb-1" />
     <Multiplicacao class="mb-1" />
@@ -10,6 +10,8 @@
     <Potencia class="mb-1" />
     <Porcentagem class="mb-1" />
     <RaizQuadrada class="mb-1" />
+    <Eq2Grau class="mb-1" />
+    <Fatorial class="mb-1" />
   </div>
 </template>
 
@@ -23,6 +25,8 @@ import Cubo from "./math/Cubo";
 import Potencia from "./math/Potencia";
 import Porcentagem from "./math/Porcentagem";
 import RaizQuadrada from "./math/RaizQuadrada";
+import Eq2Grau from "./math/Eq2Grau";
+import Fatorial from "./math/Fatorial";
 export default {
   name: "Math",
   components: {
@@ -35,6 +39,8 @@ export default {
     Potencia,
     Porcentagem,
     RaizQuadrada,
+    Eq2Grau,
+    Fatorial
   },
 };
 </script>
