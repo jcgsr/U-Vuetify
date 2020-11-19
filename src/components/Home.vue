@@ -50,6 +50,12 @@
         </router-link>
       </div>
 
+       <div class="field">
+        <router-link to="/heartrates" class="nav-link">
+          <v-icon title="Frequência Cardíaca" style="color:rgb(235, 235, 21)">mdi-heart</v-icon>
+        </router-link>
+      </div>
+
       <div class="field">
         <router-link to="/cep" class="nav-link">
           <v-icon title="Endereço" style="color:rgb(235, 235, 21)">mdi-email</v-icon>

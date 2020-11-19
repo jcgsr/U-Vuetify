@@ -12,6 +12,7 @@ import IMC from './components/IMC'
 import CEP from './components/CEP'
 import Info from './components/Info'
 import ConvertCase from './components/ConvertCase'
+import HeartRates from './components/HeartRates'
 
 Vue.use(Router)
 
@@ -62,6 +63,10 @@ export default new Router({
       path: '/convertcase',
       name: 'convertcase',
       component: ConvertCase
+   }, {
+      path: '/heartrates',
+      name: 'heartrates',
+      component: HeartRates
    }]
    
 })

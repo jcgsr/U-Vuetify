@@ -129,6 +129,12 @@
           <h6>IMC</h6>
         </router-link>
       </v-btn>
+       <v-btn>
+        <router-link class="text-decoration-none" to="/heartrates" style="color:rgb(235, 235, 21)">
+          <v-icon title="IMC">mdi-heart</v-icon>
+          <h6>Frequência Cardíaca</h6>
+        </router-link>
+      </v-btn>
       <v-btn>
         <router-link class="text-decoration-none" to="/cep" style="color:rgb(235, 235, 21)">
           <v-icon title="Endereço">mdi-email</v-icon>
