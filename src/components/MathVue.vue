@@ -2,30 +2,53 @@
   <div id="math">
     <h2 class="display-3 mt-3 mb-4">{{ title }}</h2>
     <div class="button-div mb-4">
-      <v-btn secondary style="color:rgb(235, 235, 21)"
-      @click="operacoes"        
-      class="animate__animated animate__backInLeft"
-      >Operações</v-btn>
+      <v-btn
+        secondary
+        style="color: rgb(235, 235, 21)"
+        @click="operacoes"
+        class="animate__animated animate__backInLeft"
+        >Operações</v-btn
+      >
 
-      <v-btn secondary style="color:rgb(235, 235, 21)"
-      @click="potencias"        
-      class="animate__animated animate__backInLeft"
-      >Potências/Raízes</v-btn>
+      <v-btn
+        secondary
+        style="color: rgb(235, 235, 21)"
+        @click="potencias"
+        class="animate__animated animate__backInLeft"
+        >Potências/Raízes</v-btn
+      >
 
-      <v-btn secondary style="color:rgb(235, 235, 21)"
-      @click="porcento"        
-      class="animate__animated animate__backInLeft"
-      >Porcentagem</v-btn>
+      <v-btn
+        secondary
+        style="color: rgb(235, 235, 21)"
+        @click="porcento"
+        class="animate__animated animate__backInLeft"
+        >Porcentagem</v-btn
+      >
 
-      <v-btn secondary style="color:rgb(235, 235, 21)"
-      @click="eq2grau"        
-      class="animate__animated animate__backInLeft"
-      >Equação 2º Grau</v-btn>
+      <v-btn
+        secondary
+        style="color: rgb(235, 235, 21)"
+        @click="eq2grau"
+        class="animate__animated animate__backInLeft"
+        >Equação 2º Grau</v-btn
+      >
 
-      <v-btn secondary style="color:rgb(235, 235, 21)"
-      @click="fatorial"        
-      class="animate__animated animate__backInLeft"
-      >Fatorial</v-btn>
+      <v-btn
+        secondary
+        style="color: rgb(235, 235, 21)"
+        @click="fatorial"
+        class="animate__animated animate__backInLeft"
+        >Fatorial</v-btn
+      >
+
+      <v-btn
+        secondary
+        style="color: rgb(235, 235, 21)"
+        @click="circulo"
+        class="animate__animated animate__backInLeft"
+        >Círculo</v-btn
+      >
     </div>
     <Soma v-if="showOperacoes" class="mb-1" />
     <Subtracao v-if="showOperacoes" class="mb-1" />
@@ -38,6 +61,7 @@
     <RaizQuadrada v-if="showPotencias" class="mb-1" />
     <Eq2Grau v-if="showEq2grau" class="mb-1" />
     <Fatorial v-if="showFatorial" class="mb-1" />
+    <Circulo v-if="showCirculo" class="mb-1" />
   </div>
 </template>
 
@@ -53,6 +77,7 @@ import Porcentagem from "./math/Porcentagem";
 import RaizQuadrada from "./math/RaizQuadrada";
 import Eq2Grau from "./math/Eq2Grau";
 import Fatorial from "./math/Fatorial";
+import Circulo from "./math/Circulo";
 export default {
   name: "Math",
   data: () => ({
@@ -61,7 +86,8 @@ export default {
     showPotencias: false,
     showPorcento: false,
     showEq2grau: false,
-    showFatorial: false
+    showFatorial: false,
+    showCirculo: false,
   }),
   components: {
     Soma,
@@ -74,45 +100,59 @@ export default {
     Porcentagem,
     RaizQuadrada,
     Eq2Grau,
-    Fatorial
+    Fatorial,
+    Circulo
   },
   methods: {
     operacoes() {
-      this.showOperacoes = true
-      this.showPotencias = false
-      this.showPorcento = false
-      this.showEq2grau = false
-      this.showFatorial = false
+      this.showOperacoes = true;
+      this.showPotencias = false;
+      this.showPorcento = false;
+      this.showEq2grau = false;
+      this.showFatorial = false;
+      this.showCirculo = false
     },
     potencias() {
-     this.showOperacoes = false
-     this.showPotencias = true
-     this.showPorcento = false
-     this.showEq2grau = false
-     this.showFatorial = false
-   },
-   porcento() {
-    this.showOperacoes = false
-    this.showPotencias = false
-    this.showPorcento = true
-    this.showEq2grau = false
-    this.showFatorial = false
+      this.showOperacoes = false;
+      this.showPotencias = true;
+      this.showPorcento = false;
+      this.showEq2grau = false;
+      this.showFatorial = false;
+      this.showCirculo = false
+    },
+    porcento() {
+      this.showOperacoes = false;
+      this.showPotencias = false;
+      this.showPorcento = true;
+      this.showEq2grau = false;
+      this.showCirculo = false
+      this.showFatorial = false;
+    },
+    eq2grau() {
+      this.showOperacoes = false;
+      this.showPotencias = false;
+      this.showPorcento = false;
+      this.showEq2grau = true;
+      this.showCirculo = false
+      this.showFatorial = false;
+    },
+    fatorial() {
+      this.showOperacoes = false;
+      this.showPotencias = false;
+      this.showPorcento = false;
+      this.showEq2grau = false;
+      this.showCirculo = false
+      this.showFatorial = true;
+    },
+    circulo() {
+      this.showCirculo = true
+      this.showOperacoes = false;
+      this.showPotencias = false;
+      this.showPorcento = false;
+      this.showEq2grau = false;
+      this.showFatorial = false;
+    },
   },
-  eq2grau() {
-    this.showOperacoes = false
-    this.showPotencias = false
-    this.showPorcento = false
-    this.showEq2grau = true
-    this.showFatorial = false
-  },
-  fatorial() {
-    this.showOperacoes = false
-    this.showPotencias = false
-    this.showPorcento = false
-    this.showEq2grau = false
-    this.showFatorial = true
-  }
-}
 };
 </script>
 
@@ -122,7 +162,7 @@ export default {
   width: 17%;
 }
 .v-btn.v-size--default {
-  font-size: .6rem;
+  font-size: 0.6rem;
 }
 .v-btn:not(.v-btn--round).v-size--default {
   height: 36px;
