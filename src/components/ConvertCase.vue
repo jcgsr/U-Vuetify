@@ -185,20 +185,20 @@ export default {
         .replace(/^./g, (chr) => chr.toUpperCase());
     },
     result7() {
-      let chars = {'a':'4', 'e':'3', 'i':'1', 'o':'0', 't':'7'}
+      let chars = { a: "4", e: "3", i: "1", o: "0", t: "7" };
       let text = this.text7.toLowerCase();
-      return text.replace(/([aeiot])/gi, m => chars[m]);
+      return text.replace(/([aeiot])/gi, (m) => chars[m]);
     },
-    methods: {
-      zerar: function () {
-        this.text1 = "";
-        this.text2 = "";
-        this.text3 = "";
-        this.text4 = "";
-        this.text5 = "";
-        this.text6 = "";
-        this.text7 = "";
-      },
+  },
+  methods: {
+    zerar: function () {
+      this.text1 = "";
+      this.text2 = "";
+      this.text3 = "";
+      this.text4 = "";
+      this.text5 = "";
+      this.text6 = "";
+      this.text7 = "";
     },
   },
 };

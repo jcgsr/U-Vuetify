@@ -34,13 +34,13 @@ export default {
       return 2 * this.number;
     },
     circunferencia() {
-       const pi = 3.14159;
-       return 2 * this.number * pi;
+      const pi = 3.14159;
+      return 2 * this.number * pi;
     },
     area() {
-       const pi = 3.14159;
-       return pi * this.number * this.number
-    }
+      const pi = 3.14159;
+      return pi * this.number * this.number;
+    },
   },
   methods: {
     zerar: function () {
