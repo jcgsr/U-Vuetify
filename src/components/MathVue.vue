@@ -49,6 +49,14 @@
         class="animate__animated animate__backInLeft"
         >Círculo</v-btn
       >
+
+      <v-btn
+        secondary
+        style="color: rgb(235, 235, 21)"
+        @click="juros"
+        class="animate__animated animate__backInLeft"
+        >Juros</v-btn
+      >
     </div>
     <Soma v-if="showOperacoes" class="mb-1" />
     <Subtracao v-if="showOperacoes" class="mb-1" />
@@ -62,6 +70,7 @@
     <Eq2Grau v-if="showEq2grau" class="mb-1" />
     <Fatorial v-if="showFatorial" class="mb-1" />
     <Circulo v-if="showCirculo" class="mb-1" />
+    <Juros v-if="showJuros" class="mb-1" />
   </div>
 </template>
 
@@ -78,6 +87,7 @@ import RaizQuadrada from "./math/RaizQuadrada";
 import Eq2Grau from "./math/Eq2Grau";
 import Fatorial from "./math/Fatorial";
 import Circulo from "./math/Circulo";
+import Juros from "./math/Juros";
 export default {
   name: "Math",
   data: () => ({
@@ -88,6 +98,7 @@ export default {
     showEq2grau: false,
     showFatorial: false,
     showCirculo: false,
+    showJuros: false,
   }),
   components: {
     Soma,
@@ -101,7 +112,8 @@ export default {
     RaizQuadrada,
     Eq2Grau,
     Fatorial,
-    Circulo
+    Circulo,
+    Juros,
   },
   methods: {
     operacoes() {
@@ -110,7 +122,8 @@ export default {
       this.showPorcento = false;
       this.showEq2grau = false;
       this.showFatorial = false;
-      this.showCirculo = false
+      this.showCirculo = false;
+      this.showJuros = false;
     },
     potencias() {
       this.showOperacoes = false;
@@ -118,22 +131,25 @@ export default {
       this.showPorcento = false;
       this.showEq2grau = false;
       this.showFatorial = false;
-      this.showCirculo = false
+      this.showCirculo = false;
+      this.showJuros = false;
     },
     porcento() {
       this.showOperacoes = false;
       this.showPotencias = false;
       this.showPorcento = true;
       this.showEq2grau = false;
-      this.showCirculo = false
+      this.showCirculo = false;
       this.showFatorial = false;
+      this.showJuros = false;
     },
     eq2grau() {
       this.showOperacoes = false;
       this.showPotencias = false;
       this.showPorcento = false;
       this.showEq2grau = true;
-      this.showCirculo = false
+      this.showCirculo = false;
+      this.showJuros = false;
       this.showFatorial = false;
     },
     fatorial() {
@@ -141,16 +157,27 @@ export default {
       this.showPotencias = false;
       this.showPorcento = false;
       this.showEq2grau = false;
-      this.showCirculo = false
+      this.showCirculo = false;
       this.showFatorial = true;
+      this.showJuros = false;
     },
     circulo() {
-      this.showCirculo = true
+      this.showCirculo = true;
       this.showOperacoes = false;
       this.showPotencias = false;
       this.showPorcento = false;
       this.showEq2grau = false;
       this.showFatorial = false;
+      this.showJuros = false;
+    },
+    juros() {
+      this.showCirculo = false;
+      this.showOperacoes = false;
+      this.showPotencias = false;
+      this.showPorcento = false;
+      this.showEq2grau = false;
+      this.showFatorial = false;
+      this.showJuros = true;
     },
   },
 };
