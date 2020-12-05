@@ -26,7 +26,7 @@ export default {
   props: ["moedaA", "moedaB"],
   data() {
     return {
-      moedaA_value: "",
+      moedaA_value: 1,
       moedaB_value: 0,
       errored: false,
       info: null,
