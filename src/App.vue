@@ -30,6 +30,14 @@ export default {
   data: () => ({
     //
   }),
+  watch: {
+    '$route':{
+      handler: (to) => {
+        document.title = to.meta.title || 'U-Vue'
+      },
+      immediate: true
+    }
+  },
 };
 </script>
 

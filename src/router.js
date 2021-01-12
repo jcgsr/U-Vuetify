@@ -22,51 +22,99 @@ export default new Router({
    routes: [{
       path: '/',
       name: 'home',
-      component: Home
+      component: Home,
+      meta: {
+         auth: false,
+         title: 'U-Vue'
+      }
    }, {
       path: '/math',
       name: 'math',
-      component: MathVue
+      component: MathVue,
+      meta: {
+         auth: false,
+         title: 'Matemática'
+      }
    }, {
       path: '/info',
       name: 'info',
-      component: Info
+      component: Info,
+      meta: {
+         auth: false,
+         title: 'Informações'
+      }
    }, {
       path: '/media',
       name: 'media',
-      component: MediaEscolar
+      component: MediaEscolar,
+      meta: {
+         auth: false,
+         title: 'Média Escolar'
+      }
    }, {
       path: '/conversor',
       name: 'conversor',
-      component: Conversor
+      component: Conversor,
+      meta: {
+         auth: false,
+         title: 'Conversor'
+      }
    }, {
       path: '/cambio',
       name: 'cambio',
-      component: Cambio
+      component: Cambio,
+      meta: {
+         auth: false,
+         title: 'Câmbio'
+      }
    }, {
       path: '/afinador',
       name: 'afinador',
-      component: Afinador
+      component: Afinador,
+      meta: {
+         auth: false,
+         title: 'Afinador'
+      }
    }, {
       path: '/imc',
       name: 'imc',
-      component: IMC
+      component: IMC,
+      meta: {
+         auth: false,
+         title: 'IMC'
+      }
    }, {
       path: '/cep',
       name: 'cep',
-      component: CEP
+      component: CEP,
+      meta: {
+         auth: false,
+         title: 'CEP'
+      }
    }, {
       path: '/calculadora',
       name: 'calculadora',
-      component: Calculadora
+      component: Calculadora,
+      meta: {
+         auth: false,
+         title: 'Calculadora'
+      }
    }, {
       path: '/convertcase',
       name: 'convertcase',
-      component: ConvertCase
+      component: ConvertCase,
+      meta: {
+         auth: false,
+         title: 'Editor de Textos'
+      }
    }, {
       path: '/heartrates',
       name: 'heartrates',
-      component: HeartRates
+      component: HeartRates,
+      meta: {
+         auth: false,
+         title: 'Frequência Cardíaca'
+      }
    }]
    
 })
