@@ -116,7 +116,7 @@ export default {
   height: 5rem;
   margin-bottom: .5rem;
   font-size: larger;
-  padding: 2rem;
+  padding: .7rem;
 }
 </style>
 
