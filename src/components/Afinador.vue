@@ -62,6 +62,7 @@ export default {
 @media only screen and (max-width: 456px) {
   #afinador {
     width: 85%;
+    margin: 0 auto;
   }
   audio {    
     width: 80%;

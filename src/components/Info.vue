@@ -9,7 +9,7 @@
         title="Link para o site do Vue.Js"
       >Vue.JS</a>
     </h4>
-    <v-parallax height="300" src="../assets/logo.png" title="Vue.JS logo no Wikipedia"></v-parallax>
+    <v-parallax height="450" src="../assets/logo.png" title="Vue.JS logo no Wikipedia"></v-parallax>
     <!-- SOBRE O SITE -->
     <div class="p-div mx-auto mt-12">
       <p>

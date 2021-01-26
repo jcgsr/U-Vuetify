@@ -72,6 +72,7 @@ export default {
 @media only screen and (max-width: 456px) {
   #cep {
     width: 80%;
+    margin: 0 auto;
   }
 
   #cep li {

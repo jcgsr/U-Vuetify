@@ -10,7 +10,7 @@
       </div>
       <div class="field">
         <router-link to="/calculadora" class="nav-link">
-          <v-icon title="Operações Matemáticas" style="color:rgb(235, 235, 21)">mdi-calculator</v-icon>
+          <v-icon title="Calculadora" style="color:rgb(235, 235, 21)">mdi-calculator</v-icon>
         </router-link>
       </div>
 
@@ -28,7 +28,7 @@
 
       <div class="field">
         <router-link to="/conversor" class="nav-link">
-          <v-icon title="Conversor" style="color:rgb(235, 235, 21)">mdi-temperature-celsius</v-icon>
+          <v-icon title="Conversor de Medidas" style="color:rgb(235, 235, 21)">mdi-temperature-celsius</v-icon>
         </router-link>
       </div>
 

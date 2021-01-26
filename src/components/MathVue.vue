@@ -1,12 +1,12 @@
 <template>
   <div id="math">
-    <h2 class="display-3 mt-3 mb-4">{{ title }}</h2>
+    <h2 class="display-3 ma-4">{{ title }}</h2>
     <div class="button-div mb-4">
       <v-btn
         secondary
         style="color: rgb(235, 235, 21)"
         @click="operacoes"
-        class="animate__animated animate__backInLeft"
+        class="mb-2 animate__animated animate__backInLeft"
         >Operações</v-btn
       >
 
@@ -14,7 +14,7 @@
         secondary
         style="color: rgb(235, 235, 21)"
         @click="potencias"
-        class="animate__animated animate__backInLeft"
+        class="mb-2 animate__animated animate__backInLeft"
         >Potências/Raízes</v-btn
       >
 
@@ -22,7 +22,7 @@
         secondary
         style="color: rgb(235, 235, 21)"
         @click="porcento"
-        class="animate__animated animate__backInLeft"
+        class="mb-2 animate__animated animate__backInLeft"
         >Porcentagem</v-btn
       >
 
@@ -30,7 +30,7 @@
         secondary
         style="color: rgb(235, 235, 21)"
         @click="eq2grau"
-        class="animate__animated animate__backInLeft"
+        class="mb-2 animate__animated animate__backInLeft"
         >Equação 2º Grau</v-btn
       >
 
@@ -38,7 +38,7 @@
         secondary
         style="color: rgb(235, 235, 21)"
         @click="fatorial"
-        class="animate__animated animate__backInLeft"
+        class="mb-2 animate__animated animate__backInLeft"
         >Fatorial</v-btn
       >
 
@@ -46,7 +46,7 @@
         secondary
         style="color: rgb(235, 235, 21)"
         @click="circulo"
-        class="animate__animated animate__backInLeft"
+        class="mb-2 animate__animated animate__backInLeft"
         >Círculo</v-btn
       >
 
@@ -54,7 +54,7 @@
         secondary
         style="color: rgb(235, 235, 21)"
         @click="juros"
-        class="animate__animated animate__backInLeft"
+        class="mb-2 animate__animated animate__backInLeft"
         >Juros</v-btn
       >
     </div>
@@ -189,7 +189,7 @@ export default {
   width: 17%;
 }
 .v-btn.v-size--default {
-  font-size: 0.6rem;
+  font-size: 0.7rem;
 }
 .v-btn:not(.v-btn--round).v-size--default {
   height: 36px;
@@ -200,6 +200,7 @@ export default {
 @media only screen and (max-width: 768px) {
   #math {
     width: 85%;
+    margin: 0 auto;
   }
 
   #math .button-div {
@@ -207,4 +208,16 @@ export default {
     width: 100%;
   }
 }
+@media only screen and (max-width: 456px) {
+  #math {
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  #math .button-div {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+}
+
 </style>

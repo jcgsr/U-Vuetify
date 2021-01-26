@@ -83,6 +83,7 @@ export default {
 @media only screen and (max-width: 456px) {
   #cambio {
     width: 85%;
+    margin: 0 auto;
   }
 }
 </style>

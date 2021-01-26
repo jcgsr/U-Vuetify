@@ -106,6 +106,7 @@ th {
   }
   #imc {
     width: 85%;
+    margin: 0 auto;
   }
 }
 </style>
