@@ -99,7 +99,7 @@ export default {
 };
 </script>
 
-<style lang="css">
+<style scoped>
 .v-navigation-drawer__content {
   display: contents;
 }
