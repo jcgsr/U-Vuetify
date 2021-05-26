@@ -1,0 +1,16 @@
+[
+	{
+		"id": 1,
+		"nome": "O Segredo de Brokeback Mountain",
+		"sinopse": "lorem lorem",
+		"diretor": "Ang Lee",
+		"foto": "https://sujeitoprogramador.com/r-api/img/filme0.png"
+	},
+	{
+		"id": 2,
+		"nome": "Aconteceu em Woodstock",
+		"sinopse": "lorem lorem",
+		"diretor": "Ang Lee",
+		"foto": "https://sujeitoprogramador.com/r-api/img/filme0.png"
+	}
+]
