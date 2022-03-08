@@ -51,7 +51,7 @@
       </v-btn>
       <v-btn class="mb-1">
         <router-link class="text-decoration-none" to="/cambio" style="color:rgb(235, 235, 21)">
-          <v-icon title="Câmbio">mdi-cash-usd</v-icon>
+          <v-icon title="Câmbio">mdi-cash</v-icon>
           <h6>Câmbio</h6>
         </router-link>
       </v-btn>

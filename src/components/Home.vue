@@ -34,7 +34,9 @@
 
       <div class="field">
         <router-link to="/cambio" class="nav-link">
-          <v-icon title="Câmbio" style="color:rgb(235, 235, 21)">mdi-cash-usd</v-icon>
+          <v-icon title="Câmbio" style="color:rgb(235, 235, 21)">mdi-cash</v-icon>
+            
+            
         </router-link>
       </div>
 

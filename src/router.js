@@ -14,8 +14,6 @@ import Info from "./components/Info";
 import ConvertCase from "./components/ConvertCase";
 import HeartRates from "./components/HeartRates";
 
-import Api from "./api/filmes.json";
-
 Vue.use(Router);
 
 export default new Router({
@@ -128,15 +126,6 @@ export default new Router({
          meta: {
             auth: false,
             title: "Frequência Cardíaca",
-         },
-      },
-      {
-         path: "/api",
-         name: "api",
-         component: Api,
-         meta: {
-            auth: false,
-            title: "Api Filmes",
          },
       },
    ],
