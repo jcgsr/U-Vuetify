@@ -14,10 +14,15 @@
         @click="massa"       
         class="animate__animated animate__backInRight"
       >Massa</v-btn>
+      <v-btn secondary style="color:rgb(235, 235, 21)"
+        @click="volume"       
+        class="animate__animated animate__backInRight"
+      >Volume</v-btn>
     </div>
     <Temperatura v-if="showTemperatura" />
     <Comprimento v-if="showComprimento" />
-    <Massa v-if="showMassa" />    
+    <Massa v-if="showMassa" /> 
+    <Volume v-if="showVolume" />   
   </div>
 </template>
 
@@ -25,6 +30,7 @@
 import Temperatura from "./conversor/Temperatura";
 import Massa from "./conversor/Massa";
 import Comprimento from "./conversor/comprimentos/Comprimento";
+import Volume from "./conversor/Volume";
 
 export default {
   data() {
@@ -32,29 +38,41 @@ export default {
       title: "Conversor",
       showTemperatura: true,
       showComprimento: false,
-      showMassa: false     
+      showMassa: false,
+      showVolume: false     
     };
   },
   components: {
     Temperatura,
     Comprimento,
     Massa,
+    Volume
   },
   methods: {
     temperatura() {
       this.showTemperatura = true;
       this.showComprimento = false;
       this.showMassa = false;
+      this.showVolume = false
     },
     comprimento() {
-      (this.showComprimento = true), (this.showTemperatura = false);
-      this.showMassa = false;
+      this.showComprimento = true; 
+      this.showTemperatura = false;
+      this.showMassa = false; 
+      this.showVolume = false;
     },
     massa() {
       this.showMassa = true;
       this.showComprimento = false;
       this.showTemperatura = false;
-    }   
+      this.showVolume = false;
+    } ,
+    volume() {
+      this.showVolume = true;
+      this.showMassa = false;
+      this.showComprimento = false;
+      this.showTemperatura = false;
+    }  
   },  
 };
 </script>
