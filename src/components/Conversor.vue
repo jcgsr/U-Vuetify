@@ -102,14 +102,23 @@ export default {
   .button-div {
     display: flex;
     flex-direction: column;
-    max-width: 50%;    
+    max-width: 50%;   
   }
   .button-div button {
     margin-bottom: .5rem;
+    flex-direction: column;
   }
   #conversor {
     max-width: 85%;
     margin: 0 auto;
+     }
+  #conversor .button-div {
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+
+  #conversor .button-div button {
+    margin-bottom: 1.5rem;
   }
 }
 </style>
